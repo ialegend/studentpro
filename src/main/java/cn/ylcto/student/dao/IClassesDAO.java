@@ -12,6 +12,13 @@ public interface IClassesDAO extends IDAO<Integer,Classes> {
      * @return
      * @throws SQLException
      */
+    /**
+    新增了注释二
+    注释二
+    注释二
+    注释二
+    注释二
+    */
     public Classes findByCname(String cname)throws SQLException;
 
 }
