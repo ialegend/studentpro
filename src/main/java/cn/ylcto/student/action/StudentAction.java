@@ -26,6 +26,10 @@ public class StudentAction extends DefaultAction {
         String result [] = request.getParameter("ids").split("\\|");
         List<String> all = new ArrayList<>();
         for (int x = 0;x < result.length;x++){
+            System.out.println("hello world");
+            System.out.println("hello world");
+            System.out.println("hello world");
+            System.out.println("hello world");
             all.add(result[x]);
         }
         if (all.size() > 0){
