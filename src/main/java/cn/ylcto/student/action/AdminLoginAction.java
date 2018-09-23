@@ -16,6 +16,7 @@ import java.text.SimpleDateFormat;
 @Controller
 @RequestMapping(value = "/pages/back/*")
 public class AdminLoginAction extends DefaultAction {
+    
     @Resource
     private IAdminService adminService;
 
@@ -23,6 +24,9 @@ public class AdminLoginAction extends DefaultAction {
     public ModelAndView login(HttpServletRequest request,Admin admin){
         ModelAndView mav = new ModelAndView(super.getResource("pages.forward"));
         try {
+            System.out.pritnln("hello world!!!!");
+            //na just a story
+            //na just a story
             // 实现登录密码加盐操作
             admin.setPassword(new MD5Code().getMD5ofStr(admin.getPassword()+admin.getEmail()));
             Admin vo = this.adminService.login(admin); // 登录成功后还要取得最后一次登录日期
@@ -50,4 +54,5 @@ public class AdminLoginAction extends DefaultAction {
     public String getText() {
         return "管理员";
     }
+    
 }
