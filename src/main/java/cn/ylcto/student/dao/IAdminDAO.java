@@ -11,5 +11,11 @@ public interface IAdminDAO extends IDAO<String,Admin> {
      * @return 成功返回最后一次登录日期
      * @throws SQLException
      */
+    /**
+     * 这就是我实验的一段注释
+     * @param vo
+     * @return
+     * @throws SQLException
+     */
     public Admin findLogin(Admin vo)throws SQLException;
 }
