@@ -19,6 +19,14 @@ public interface IClassesDAO extends IDAO<Integer,Classes> {
     注释二
     注释二
     */
+    /**
+    注释三
+    三
+    三
+    三
+    三
+    三
+    */
     public Classes findByCname(String cname)throws SQLException;
 
 }
